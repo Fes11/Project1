@@ -5,8 +5,8 @@
 	margin: 0;
 }
 body {
-	background: $black;
-	color: white;
+	background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+ 	color: black;
 }
 header {
 	display: flex;
@@ -19,6 +19,10 @@ header {
 	left: 0;
 	.logo {
 		padding: 0 50px;
+		&:hover {
+			transition: all 0.3s;
+			transform: rotate(360deg);
+		}
 	}
 	nav {
 		display: flex;
@@ -29,11 +33,15 @@ header {
 			margin: 0 30px;
 			:hover {
 				transition: all 0.5s;
-				color: darkred;
+				  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+				  -webkit-background-clip: text;
+				  -webkit-text-fill-color: transparent;
+				  color: #0B2349;
+				  display: table;
 			}
 		}
 		a {
-			color: white;
+			color: black;
 			text-decoration: none;
 
 		}
@@ -48,19 +56,25 @@ header {
 	align-items: center;
 	flex-direction: column;
 	p {
-		color: darkred;
+		color: $black;
 		font-size: 24px;
 		width: 900px;
 	}
 	h1 {
-		font-size: 100px;
+		font-size: 140px;
 		text-transform: uppercase;
-		padding: 400px 0 0 0;
+		margin: 300px 0 0 0;
+		font-family: 'Rubik One', sans-serif;
+	  text-transform: uppercase;
+	  background-image: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  color: #0B2349;
+	  display: table;
 	}
 }
 .lok {
 	height: 100vh;
-	background: $black;
 	h1 {
 		text-align: center;
 		font-size: 45px;
@@ -72,7 +86,7 @@ header {
 }
 
 footer {
-	background: silver;
+	background: darkred;
 	width: 100%;
 	height: 200px;
 }
